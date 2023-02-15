@@ -1,9 +1,11 @@
+
+
 interface User {
   id: number;
   firstName: string;
   lastName: string;
   role: "admin" | "user" | "super-admin";
-  posts: Post;
+  posts: Array<Post>;
 }
 
 interface Post {
